@@ -29,7 +29,7 @@ var Triangle = React.createClass({
     this.becomeActive();
     var constrained = this.calculateConstrained(x, y);
     var output = this.outputValues(constrained.x, constrained.y);
-    console.log(output);
+    this.writeToForm(output.x, output.y);
     this.setState({
       position: {
         left: constrained.x,
@@ -67,6 +67,10 @@ var Triangle = React.createClass({
     var outValues = this.calculateValues(x, y);
     return { x: this.toFixed(outValues.x, 3), y: this.toFixed(outValues.y, 3) };
   },
+  writeToForm: function writeToForm(x, y) {
+    $('input#answer{SGQ}SQ001').val(x);
+    $('input#answer{SGQ}SQ002').val(y);
+  },
   handleCheckbox: function handleCheckbox(event) {
     this.setState({
       checkbox: event.target.checked
@@ -88,8 +92,7 @@ var Triangle = React.createClass({
       position: { left: 100, top: 100 },
       polygonFill: "#95a5a6"
     });
-    console.log({ x: "-1", y: "-1" });
-    // Add call to function that outputs to form fields
+    this.writeToForm("-1", "-1");
   },
   becomeActive: function becomeActive() {
     // Reset initial output values
@@ -99,8 +102,7 @@ var Triangle = React.createClass({
       polygonFill: "#E74924",
       output: { x: output.x, y: output.y }
     });
-    console.log(output);
-    // Add call to function that outputs to form fields
+    this.writeToForm("-1", "-1");
   },
   render: function render() {
     return React.createElement(
