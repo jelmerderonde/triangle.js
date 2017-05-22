@@ -68,8 +68,8 @@ var Triangle = React.createClass({
     return { x: this.toFixed(outValues.x, 3), y: this.toFixed(outValues.y, 3) };
   },
   writeToForm: function writeToForm(x, y) {
-    $('input#answer{SGQ}SQ001').val(x);
-    $('input#answer{SGQ}SQ002').val(y);
+    $('input#answer' + this.props.sgq + 'SQ001').val(x);
+    $('input#answer' + this.props.sgq + 'SQ002').val(y);
   },
   handleCheckbox: function handleCheckbox(event) {
     this.setState({
