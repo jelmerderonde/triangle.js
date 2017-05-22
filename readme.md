@@ -1,12 +1,12 @@
 # Usage
 Add the following to the question group HTML:
 ```html
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/jelmerderonde/triangle.js/master/triangle.css" />
+<link rel="stylesheet" type="text/css" href="https://jelmerderonde.github.io/triangle.js/triangle.css" />
 <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
 <script src='https://unpkg.com/react-draggable@2.2.4/dist/react-draggable.js'></script>
 <script src='https://borgboyone.github.io/Graph/js/Graph.js'></script>
-<script src='https://rawgit.com/jelmerderonde/triangle.js/master/Triangle.js'></script>
+<script src='https://jelmerderonde.github.io/triangle.js/Triangle.js'></script>
 
 <script>
 jQuery(document).ready(function($) {
