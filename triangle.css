@@ -1,0 +1,70 @@
+.triangle-map {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.triad-label {
+  position: absolute;
+  text-align: center;
+  width: 75px;
+  padding: 0;
+}
+
+.top-label {
+  bottom: 265px;
+  left: center;
+}
+
+.left-label {
+  top: 265px;
+  left: 35px;
+}
+
+.right-label {
+  top: 265px;
+  right: 35px;
+}
+
+.na-check {
+  position: absolute;
+  left: 5px;
+  top: middle;
+}
+
+.map {
+  width: 200px;
+  height: 173.205px;
+  position: relative;
+}
+
+.selector {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  margin: -5px;
+  background-color: #323546;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.selector:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+svg {
+  display: block;
+}
