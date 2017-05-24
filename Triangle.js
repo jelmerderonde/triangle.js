@@ -22,6 +22,9 @@ var Triangle = React.createClass({
       checkbox: false
     };
   },
+  componentDidMount: function componentDidMount() {
+    this.writeToForm(this.state.output.x, this.state.output.y);
+  },
   handleDrag: function handleDrag(e, _ref) {
     var x = _ref.x;
     var y = _ref.y;
